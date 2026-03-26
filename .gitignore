@@ -1,0 +1,19 @@
+# 微信开发者工具自动生成
+.miniprogram/
+logs/
+*.log
+
+# 私有配置
+project.private.config.json
+
+# 依赖
+node_modules/
+miniprogram_npm/
+package-lock.json
+yarn.lock
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
