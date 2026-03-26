@@ -1,0 +1,42 @@
+<swiper class="sw" indicator-dots autoplay interval="3000" circular>
+  <swiper-item wx:for="{{detail.pics}}" bind:tap="prewHandler" data-current="{{item.pics_big}}">
+    <image src="{{item.pics_big}}" mode=""/>
+  </swiper-item>
+</swiper>
+<view class="slide">
+  <view class="slider_top">
+    ￥{{detail.goods_price}}
+  </view>
+  <view class="slider_bottom">
+    <view class="left">
+      {{detail.goods_name}}
+    </view>
+    <view class="right">
+      <image src="/tabs/shoucang.png" mode=""/>
+      <view>收藏</view>
+    </view>
+  </view>
+</view>
+
+<view class="model">
+  快递： 免运费
+</view>
+
+<view class="pic">
+  <image wx:for="{{detail.pics}}" src="{{item.pics_big}}" mode=""/>
+</view>
+
+<view class="car">
+  <view class="dianpu">
+    <image src="/tabs/shoucangdianpu.png" mode=""/>
+    <view>店铺</view>
+  </view>
+  <view class="car_in">
+    <image src="/tabs/gouwuche.png" mode=""/>
+    <view>购物车</view>
+  </view>
+  <view class="add">
+    <view class="add_left" bind:tap="addcar">加入购物车</view>
+    <view class="add_right">立即购买</view>
+  </view>
+</view>

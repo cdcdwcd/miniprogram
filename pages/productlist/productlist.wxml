@@ -1,0 +1,11 @@
+<view class="box">
+  <view class="list" wx:for="{{prolist}}" data-id="{{item.goods_id}}" bind:tap="gotodetail">
+    <view class="left"> 
+    <image src="{{item.goods_big_logo||'https://ts1.tc.mm.bing.net/th/id/OIP-C.gVEvU8F9e9dbpmyHauu7sgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'}}" mode=""/> 
+    </view>
+    <view class="right">
+      <view>{{item.goods_name}}</view>
+      <view class="price">￥{{item.goods_price}}.00</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="avatar">
+  <image src="https://img95.699pic.com/photo/40250/6425.jpg_wh300.jpg" mode=""/>
+  <view>Children</view>
+</view>
+<!-- news -->
+<view class="news">
+  <view class="news_in" wx:for="{{list}}">
+    <view>{{item.num}}</view>
+    <view>{{item.title}}</view>
+  </view>
+</view>
+
+<view class="list_in" bind:tap="exit">
+  <view>退出登录</view>
+  <view>></view>
+</view>

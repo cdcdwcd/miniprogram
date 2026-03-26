@@ -1,0 +1,21 @@
+<view class="search">
+  <view class="search_in">搜索</view>
+</view>
+<view class="box">
+<!-- 滚动容器 左侧-->
+  <scroll-view class="box_left" scroll-y>
+
+    <view wx:for="{{cartlist}}" data-index="{{index}}" bind:tap="tabhandler" class="{{activeIndex==index?'bg':''}}">{{item.cat_name}}</view>
+  </scroll-view>
+  <view class="box_right">
+    <view class="box_right_in" wx:for="{{cartlist[activeIndex].children}}">
+      <view class="title">/{{item.cat_name}}/</view>
+      <view class="main">
+        <view class="main_in" wx:for="{{item.children}}" data-id="{{item.cat_id}}" bind:tap="navtoproductlist" >
+          <image src="{{item.cat_icon}}" mode=""/>
+        <view>{{item.cat_name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

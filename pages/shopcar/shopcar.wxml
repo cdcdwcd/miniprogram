@@ -1,0 +1,54 @@
+<view class="box">
+  <view class="box_top">
+    <button type="primary">请选择收货地址</button>
+  </view>
+  <image class="line" src="/tabs/line.png" mode=""/>
+  <view class="box_bottom">
+    <view class="car">
+      <image src="/tabs/gouwuche.png" mode=""/>
+      <text>购物车</text>
+    </view>
+
+    <checkbox-group bindchange="">
+      <view class="list" wx:for="{{storagedata}}" >
+        <checkbox value="" checked="{{item.checked}}" />
+        <image src="{{item.img}}" mode=""/>
+        <view class="right">
+        <!-- 上 -->
+          <view class="info">
+            {{item.name}}
+          </view>
+          <!-- 下 -->
+          <view class="info_bottom">
+            <view class="price">￥{{item.price}}.00</view>
+            <view class="number">
+              <view>-</view>
+              <view>{{item.num}}</view>
+              <view>+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </checkbox-group>
+
+    <checkbox-group bindchange="parhandler">
+      <view class="parent">
+      <!-- 左 -->
+        <view class="par_left">
+          <checkbox value="1"/>
+          <text>全选</text>
+        </view>
+        <!-- 中 -->
+        <view class="par_center">
+          <text>合计：</text>
+          <text class="p">￥{{ressum}}.00</text>
+        </view>
+        <!-- 右 -->
+        <view class="par_right">
+          结算（{{resnum}}）
+        </view>
+      </view>
+    </checkbox-group>
+
+  </view>
+</view>

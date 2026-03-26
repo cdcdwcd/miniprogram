@@ -1,0 +1,20 @@
+<view class="search">
+  <input type="text" placeholder="请输入搜索内容..." bindinput="ipthandler" bindconfirm="entryhandler" />
+</view>
+<!-- 搜索历史 -->
+<view class="history">
+  <view class="his_top">
+    <text>搜索历史</text>
+    <image src="/tabs/shanchu.png" bind:tap="clearhandler" mode=""/>
+  </view>
+  <view class="his_bottom">
+    <text wx:for="{{hislist}}">{{item}}</text>
+  </view>
+</view>
+<!-- 列表区域 -->
+<view class="list">
+  <view class="list_in" wx:for="{{searchlist}}" bind:tap="gotoproductlist" data-name="{{item.goods_name}}" >
+    <view>{{item.goods_name}}</view>
+    <view>></view>
+  </view>
+</view>

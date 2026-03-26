@@ -1,0 +1,83 @@
+.sw{
+  width: 100%;
+  height: 240px;
+}
+.sw image{
+  width: 100%;
+  height: 240px;
+}
+.slide{
+  padding: 10px;
+}
+.slider_top{
+  color: #c00000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.slider_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  width: 80px;
+  text-align: center;
+  color: #666;
+}
+.right image{
+  width: 22px;
+  height: 22px;
+}
+.model{
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.pic image{
+  width: 100%;
+  height: 240px;
+}
+
+.car{
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  padding-top:5px ;
+}
+.car image{
+  width: 22px;
+  height: 22px;
+}
+.dianpu{
+  margin: 0 10px;
+  font-size: 14px;
+}
+.car_in{
+  margin: 0 10px;
+  font-size: 14px;
+}
+.add{
+  flex: 1;
+  display: flex;
+  line-height: 40px;
+  color: #fff;
+  padding: 0 15px;
+}
+.add_left{
+  width: 50%;
+  height: 40px;
+  background-color: #ff0000;
+ border-top-left-radius: 20px;
+ border-bottom-left-radius: 20px;
+}
+.add_right{
+  width: 50%;
+  height: 40px;
+  background-color: #ffa200;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}

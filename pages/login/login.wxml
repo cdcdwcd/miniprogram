@@ -1,0 +1,5 @@
+<view class="box">
+  <image src="https://img95.699pic.com/photo/40250/6425.jpg_wh300.jpg" mode=""/>
+  <view class="login" bind:tap="handler">一键登录</view>
+  <view class="txt">登录后尽享更多权益</view>
+</view>0

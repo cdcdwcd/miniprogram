@@ -1,0 +1,27 @@
+<view class="search">
+    <view class="search_in">搜索</view>
+</view>
+
+<swiper class="sw" autoplay circular indicator-dots interval="2000">
+    <swiper-item wx:for="{{swiperList}}">
+        <image src="{{item.image_src}}" mode=""/>
+    </swiper-item>
+</swiper>
+
+<view class="nav">
+    <image wx:for="{{navList}}"  src="{{item.image_src}}" mode=""/>
+</view>
+
+<view class="main" wx:for="{{floorList}}" >
+    <view class="main_top">
+        <image src="{{item.floor_title.image_src}}" mode=""/>
+    </view>
+    <view class="main_bottom">
+        <view class="bottom_left">
+            <image src="{{item.product_list[0].image_src}}" mode=""/>
+        </view>
+        <view class="bottom_right">
+            <image wx:for="{{item.product_list}}"  src="{{item.image_src}}" wx:if="{{index!=0}}" mode=""/>
+        </view>
+    </view>
+</view>
